@@ -189,7 +189,7 @@ int main()
                     {
                         // Thực hiện lệnh từ client
                         char command[BUFFER_SIZE];
-                        snprintf(command, BUFFER_SIZE, "%.900s > out.txt", buffer);
+                        snprintf(command, BUFFER_SIZE, "%.900s > output.txt", buffer);
                         system(command);
 
                         // Đọc kết quả từ file out.txt

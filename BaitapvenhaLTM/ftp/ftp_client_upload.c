@@ -13,7 +13,7 @@ int main()
 
     struct sockaddr_in addr;
     addr.sin_family = AF_INET;
-    addr.sin_addr.s_addr = inet_addr("192.168.5.54");
+    addr.sin_addr.s_addr = inet_addr("192.168.56.1");
     addr.sin_port = htons(21);
 
     if (connect(client, (struct sockaddr *)&addr, sizeof(addr)))
@@ -91,7 +91,7 @@ int main()
 
         struct sockaddr_in data_addr;
         data_addr.sin_family = AF_INET;
-        data_addr.sin_addr.s_addr = inet_addr("192.168.5.54");
+        data_addr.sin_addr.s_addr = inet_addr("192.168.56.1");
         data_addr.sin_port = htons(port);
 
         if (connect(data_socket, (struct sockaddr *)&data_addr, sizeof(data_addr)))
@@ -150,7 +150,7 @@ int main()
 
         struct sockaddr_in data_addr;
         data_addr.sin_family = AF_INET;
-        data_addr.sin_addr.s_addr = inet_addr("192.168.5.54");
+        data_addr.sin_addr.s_addr = inet_addr("192.168.56.1");
         data_addr.sin_port = htons(port);
 
         if (connect(data_socket, (struct sockaddr *)&data_addr, sizeof(data_addr)))
@@ -218,7 +218,7 @@ int main()
 
         struct sockaddr_in data_addr;
         data_addr.sin_family = AF_INET;
-        data_addr.sin_addr.s_addr = inet_addr("192.168.5.54");
+        data_addr.sin_addr.s_addr = inet_addr("192.168.56.1");
         data_addr.sin_port = htons(port);
 
         if (connect(data_socket, (struct sockaddr *)&data_addr, sizeof(data_addr)))
